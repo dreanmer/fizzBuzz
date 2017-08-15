@@ -38,7 +38,7 @@ class Printer
     {
         foreach ($this->replacers as $replacer) {
             if ($replacer->canReplace($n)) {
-                return $replacer->replace($n);
+                return $replacer->getReplacer();
             }
         }
         return $n;

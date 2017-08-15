@@ -9,7 +9,7 @@ class IT implements Replaceable
         return !($n % 5);
     }
 
-    public static function replace($n)
+    public static function getReplacer()
     {
         return 'IT';
     }

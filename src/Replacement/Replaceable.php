@@ -6,5 +6,5 @@ interface Replaceable
 {
     public static function canReplace($n);
 
-    public static function replace($n);
+    public static function getReplacer();
 }

@@ -9,7 +9,7 @@ class Linio implements Replaceable
         return !($n % 3);
     }
 
-    public static function replace($n)
+    public static function getReplacer()
     {
         return 'Linio';
     }

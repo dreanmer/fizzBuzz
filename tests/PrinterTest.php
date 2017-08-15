@@ -41,4 +41,19 @@ class PrinterTest extends PHPUnit\Framework\TestCase
             [3, 'Linio']
         ];
     }
+
+    public function testCleanPrint()
+    {
+        $this->expectOutputString('1,2,3,4,5,6,7,8,9,10');
+        $printer = new Printer();
+        $printer->print(10, 1, ",");
+    }
+
+    public function testeReplacingPrint()
+    {
+        $this->expectOutputString('1,2,Linio,4,5,Linio,7,8,Linio,10');
+        $printer = new Printer();
+        $printer->addReplacer(new Linio);
+        $printer->print(10, 1, ",");
+    }
 }

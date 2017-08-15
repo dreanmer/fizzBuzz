@@ -9,7 +9,7 @@ class Linianos implements Replaceable
         return !($n % 15);
     }
 
-    public static function replace($n)
+    public static function getReplacer()
     {
         return 'Linianos';
     }
