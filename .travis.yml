@@ -1,3 +1,10 @@
 language: php
-php: 7.1
-install: composer install
+php:
+  - 7.1
+install:
+  - composer install
+addons:
+  code_climate:
+    repo_token: 0482d5e77db9d17c6de070e1282e264a6782d9c87fe3c6f96ddc4053b13f6bf4
+after_success:
+  - vendor/bin/test-reporter

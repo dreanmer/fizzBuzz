@@ -2,7 +2,8 @@
   "name": "vagrant/only-one-if",
   "require": {},
   "require-dev": {
-    "phpunit/phpunit": "^6.3"
+    "phpunit/phpunit": "^6.3",
+    "codeclimate/php-test-reporter": "dev-master"
   },
   "autoload": {
     "psr-4": {
