@@ -28,6 +28,15 @@ class PrinterTest extends PHPUnit\Framework\TestCase
      */
     public function testReplace($n, $expected)
     {
+        $printer = new Printer([new Linio]);
+        $this->assertEquals($expected, $printer->replace($n));
+    }
+
+    /**
+     * @dataProvider replaceProvider
+     */
+    public function testAddReplace($n, $expected)
+    {
         $printer = new Printer();
         $printer->addReplacer(new Linio);
         $this->assertEquals($expected, $printer->replace($n));
