@@ -3,9 +3,13 @@
 
 # Business Class FizzBuzz Test
 
-- 1 - run composer install
-- 2 - point your server to `public/index.php`
+This is the common Fizz Buzz test, but made with S.O.L.I.D principles.
 
-## Tests
+### Setup
+
+- run `composer install`
+- point your server to `public/index.php`
+
+### Tests
 
 `composer test`
