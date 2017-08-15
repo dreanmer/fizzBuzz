@@ -2,15 +2,15 @@
 
 namespace Src\Replacement;
 
-class IT implements Replaceable
+class FizzBuzz implements Replaceable
 {
     public static function canReplace($n)
     {
-        return !($n % 5);
+        return !($n % 15);
     }
 
     public static function getReplacer()
     {
-        return 'IT';
+        return 'FizzBuzz';
     }
 }

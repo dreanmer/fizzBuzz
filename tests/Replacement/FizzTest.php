@@ -1,16 +1,16 @@
 <?php
 
-use Src\Replacement\Linio;
+use Src\Replacement\Fizz;
 
-class LinioTest extends PHPUnit\Framework\TestCase
+class FizzTest extends PHPUnit\Framework\TestCase
 {
     /**
      * @dataProvider replaceProvider
      */
     public function testCanReplace($n, $expected)
     {
-        $linio = new Linio();
-        $this->assertEquals($expected, $linio->canReplace($n));
+        $fizz = new Fizz();
+        $this->assertEquals($expected, $fizz->canReplace($n));
     }
 
     public function replaceProvider()
@@ -27,7 +27,7 @@ class LinioTest extends PHPUnit\Framework\TestCase
 
     public function testGetReplacer()
     {
-        $linio = new Linio();
-        $this->assertEquals('Linio', $linio->getReplacer());
+        $fizz = new Fizz();
+        $this->assertEquals('Fizz', $fizz->getReplacer());
     }
 }

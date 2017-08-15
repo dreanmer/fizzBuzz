@@ -1,16 +1,16 @@
 <?php
 
-use Src\Replacement\IT;
+use Src\Replacement\FizzBuzz;
 
-class ITTest extends PHPUnit\Framework\TestCase
+class FizzBuzzTest extends PHPUnit\Framework\TestCase
 {
     /**
      * @dataProvider replaceProvider
      */
     public function testCanReplace($n, $expected)
     {
-        $IT = new IT();
-        $this->assertEquals($expected, $IT->canReplace($n));
+        $fizzBuzz = new FizzBuzz();
+        $this->assertEquals($expected, $fizzBuzz->canReplace($n));
     }
 
     public function replaceProvider()
@@ -20,13 +20,14 @@ class ITTest extends PHPUnit\Framework\TestCase
             [2, false],
             [3, false],
             [4, false],
-            [5, true]
+            [5, false],
+            [15, true]
         ];
     }
 
     public function testGetReplacer()
     {
-        $IT = new IT();
-        $this->assertEquals('IT', $IT->getReplacer());
+        $fizzBuzz = new FizzBuzz();
+        $this->assertEquals('FizzBuzz', $fizzBuzz->getReplacer());
     }
 }

@@ -2,7 +2,7 @@
 
 namespace Src\Replacement;
 
-class Linio implements Replaceable
+class Fizz implements Replaceable
 {
     public static function canReplace($n)
     {
@@ -11,6 +11,6 @@ class Linio implements Replaceable
 
     public static function getReplacer()
     {
-        return 'Linio';
+        return 'Fizz';
     }
 }

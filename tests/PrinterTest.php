@@ -1,7 +1,7 @@
 <?php
 
 use Src\Printer;
-use Src\Replacement\Linio;
+use Src\Replacement\Fizz;
 
 class PrinterTest extends PHPUnit\Framework\TestCase
 {
@@ -28,7 +28,7 @@ class PrinterTest extends PHPUnit\Framework\TestCase
      */
     public function testReplace($n, $expected)
     {
-        $printer = new Printer([new Linio]);
+        $printer = new Printer([new Fizz]);
         $this->assertEquals($expected, $printer->replace($n));
     }
 
@@ -38,7 +38,7 @@ class PrinterTest extends PHPUnit\Framework\TestCase
     public function testAddReplace($n, $expected)
     {
         $printer = new Printer();
-        $printer->addReplacer(new Linio);
+        $printer->addReplacer(new Fizz);
         $this->assertEquals($expected, $printer->replace($n));
     }
 
@@ -47,7 +47,7 @@ class PrinterTest extends PHPUnit\Framework\TestCase
         return [
             [1, 1],
             [2, 2],
-            [3, 'Linio']
+            [3, 'Fizz']
         ];
     }
 
@@ -60,9 +60,9 @@ class PrinterTest extends PHPUnit\Framework\TestCase
 
     public function testeReplacingPrint()
     {
-        $this->expectOutputString('1,2,Linio,4,5,Linio,7,8,Linio,10');
+        $this->expectOutputString('1,2,Fizz,4,5,Fizz,7,8,Fizz,10');
         $printer = new Printer();
-        $printer->addReplacer(new Linio);
+        $printer->addReplacer(new Fizz);
         $printer->print(10, 1, ",");
     }
 }

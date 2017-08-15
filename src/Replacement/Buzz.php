@@ -2,15 +2,15 @@
 
 namespace Src\Replacement;
 
-class Linianos implements Replaceable
+class Buzz implements Replaceable
 {
     public static function canReplace($n)
     {
-        return !($n % 15);
+        return !($n % 5);
     }
 
     public static function getReplacer()
     {
-        return 'Linianos';
+        return 'Buzz';
     }
 }

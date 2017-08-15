@@ -3,14 +3,14 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 
 use Src\Printer;
-use Src\Replacement\IT;
-use Src\Replacement\Linianos;
-use Src\Replacement\Linio;
+use Src\Replacement\Buzz;
+use Src\Replacement\FizzBuzz;
+use Src\Replacement\Fizz;
 
 $replacers = [
-    new Linianos,
-    new Linio,
-    new IT
+    new FizzBuzz,
+    new Fizz,
+    new Buzz
 ];
 
 $printer = new Printer($replacers);
