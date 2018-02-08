@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/Dreanmer/teste_starcorp.svg?branch=master)](https://travis-ci.org/Dreanmer/teste_starcorp)
-[![Test Coverage](https://codeclimate.com/github/Dreanmer/teste_starcorp/badges/coverage.svg)](https://codeclimate.com/github/Dreanmer/teste_starcorp/coverage)
+[![Build Status](https://travis-ci.org/dreanmer/fizzBuzz.svg?branch=master)](https://travis-ci.org/dreanmer/fizzBuzz)
+[![Test Coverage](https://codeclimate.com/github/dreanmer/fizzBuzz/badges/coverage.svg)](https://codeclimate.com/github/dreanmer/fizzBuzz/coverage)
 
 # Business Class FizzBuzz Test
 
